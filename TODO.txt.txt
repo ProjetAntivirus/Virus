@@ -1,0 +1,7 @@
+//TODO
+
+//Ajouter les requêtes de BDD à chaque appel d'une attaque.
+
+//Création d'une attaque grâce à un Service Web météo.
+
+//Création d'une attaque via SMS.
