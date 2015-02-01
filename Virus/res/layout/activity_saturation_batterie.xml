@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+   	 android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="#000000" >
+
+    <Button
+        android:id="@+id/buttonAPSPI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_APSPI" 
+        android:background="@drawable/red_button"
+        style="button_text"/>
+    <Button 
+        android:id="@+id/buttonAPSGM"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_APSGM"
+        android:background="@drawable/red_button"
+        style="button_text"/>
+    <Button 
+        android:id="@+id/buttonAVB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_AVB"
+        android:background="@drawable/red_button"
+        style="button_text"/>
+
+</LinearLayout>
