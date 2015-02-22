@@ -6,25 +6,25 @@
     android:background="#000000" >
 
 	<Button
-        android:id="@+id/buttonAPSB"
+        android:id="@+id/buttonSaturationBattery"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_APSB" 
-        android:background="@drawable/red_button"
+        android:text="@string/button_Saturation_battery" 
+        android:onClick="saturationBattery"
         style="button_text"/>
 	<Button
-        android:id="@+id/buttonESS"
+        android:id="@+id/buttonSMS"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_ESS" 
-        android:background="@drawable/red_button"
+        android:text="@string/button_SMS" 
+        android:onClick="sendSMS"
         style="button_text"/>
 	<Button
-        android:id="@+id/buttonCLL"
+        android:id="@+id/buttonLogs"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_CLL" 
-        android:background="@drawable/red_button"
+        android:text="@string/button_Logs" 
+        android:onClick="checkLogs"
         style="button_text"/>
     
 </LinearLayout>

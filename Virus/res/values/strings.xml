@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Virus</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_google_maps">GoogleMaps</string>
-    <string name="button_APSB">Attaque par saturation de batterie</string>
-    <string name="button_APSPI">Attaque par saturation de pages internet</string>
-    <string name="button_APSGM">Attaque par service Google Maps</string>
-    <string name="button_CLL">Consulter les logs</string>
-    <string name="button_ESS">Envoie de SMS surtaxés</string>
-    <string name="button_AVB">Attaque via Bluetooth</string>
     
+    <!-- MainActivity -->
+    <string name="button_Saturation_battery">Saturation battery</string>
+    <string name="button_Logs">Check database logs</string>
+    <string name="button_SMS">Send SMS surcharged</string>
+    <string name="quit">Quit</string>
+    
+    <!-- Saturation battery -->
+    <string name="title_activity_saturation_batterie">Saturation Battery</string>
+    <string name="button_Service">Weather Service</string>
+    <string name="button_Google">Google Maps Service</string>
+    <string name="button_Bluetooth">Bluetooth Service</string>
+    
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">Connecting&#8230;</string>
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for devices&#8230;</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
 	
-    <string name="title_activity_saturation_batterie">Saturation Batterie</string>
+ 
 
 </resources>
