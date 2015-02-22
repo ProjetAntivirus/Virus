@@ -1,7 +1,7 @@
 //TODO
 
-//Ajouter les requêtes de BDD à chaque appel d'une attaque.
+//Ajouter les requÃªtes de BDD Ã  chaque appel d'une attaque.
 
-//Création d'une attaque grâce à un Service Web météo.
+//Finir Bluetooth
 
-//Création d'une attaque via SMS.
+//CrÃ©ation d'une attaque via SMS.
