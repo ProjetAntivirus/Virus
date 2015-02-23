@@ -6,6 +6,7 @@ import com.example.virus.R;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,7 @@ public class SaturationBattery extends Activity{
 	}
 	
 	public void saturationService(View v){
-		
+		startActivity(new Intent(SaturationBattery.this, WebService.class));
 	}
 	
 	public void saturationGoogleMap(View v){

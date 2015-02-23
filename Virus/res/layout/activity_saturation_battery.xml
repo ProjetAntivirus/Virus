@@ -11,20 +11,23 @@
         android:layout_height="wrap_content"
         android:text="@string/button_Service" 
         android:onClick="saturationService"
-        style="button_text"/>
+        android:background="@drawable/btn_lightblue_glossy"
+        style="buttonText"/>
     <Button 
         android:id="@+id/buttonGoogle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_Google"
        	android:onClick="saturationGoogleMap"
-        style="button_text"/>
+       	android:background="@drawable/btn_lightblue_glossy"
+        style="buttonText"/>
     <Button 
         android:id="@+id/buttonBluetooth"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_Bluetooth"
         android:onClick="saturationBluetooth"
-        style="button_text"/>
+        android:background="@drawable/btn_lightblue_glossy"
+        style="buttonText"/>
 
 </LinearLayout>

@@ -57,7 +57,10 @@
         <activity 
             android:name="view.BluetoothChat"
             android:label="@string/app_name"/>
-
+        <activity 
+            android:name="view.WebService"
+            android:label="@string/app_name"/>
+        
         <service android:name="src.overcharging.ServiceInternet" />
     </application>
 
