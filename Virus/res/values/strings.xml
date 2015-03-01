@@ -12,9 +12,11 @@
     
     <!-- Saturation battery -->
     <string name="title_activity_saturation_batterie">Saturation Battery</string>
-    <string name="button_Service">Weather Service</string>
-    <string name="button_Google">Google Maps Service</string>
-    <string name="button_Bluetooth">Bluetooth Service</string>
+    <string name="textService">Weather Service</string>
+    <string name="textGoogleMap">Google Maps Service</string>
+    <string name="textBluetooth">Bluetooth Service</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
     
     <!--  BluetoothChat -->
     <string name="send">Send</string>
