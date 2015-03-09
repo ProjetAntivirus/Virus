@@ -1,5 +1,7 @@
 package com.example.virus;
 
+import sms.Sms;
+import view.DatabaseActivity;
 import view.SaturationBattery;
 import android.app.Activity;
 import android.content.Intent;
@@ -25,11 +27,13 @@ public class MainActivity extends Activity {
 	}
 
 	public void sendSMS(View view) {
-
+		Intent intent = new Intent(MainActivity.this, Sms.class);
+		startActivity(intent);
 	}
 
 	public void checkLogs(View view) {
-
+		Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+		startActivity(intent);
 	}
 
 }

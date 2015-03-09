@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+
+   <Button
+	   android:id="@+id/delete"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/delete"
+       android:onClick="onClick"
+       android:background="@drawable/btn_lightblue_glossy"
+       style="@style/ButtonText"/>
+
+    <ListView
+       android:id="@android:id/list"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/comments"
+       android:background="#ffffff" />
+
+</LinearLayout>

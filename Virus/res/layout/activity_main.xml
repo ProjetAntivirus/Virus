@@ -12,7 +12,7 @@
         android:text="@string/button_Saturation_battery" 
         android:onClick="saturationBattery"
         android:background="@drawable/btn_lightblue_glossy"
-        style="buttonText"/>
+        style="@style/ButtonText"/>
 	<Button
         android:id="@+id/buttonSMS"
         android:layout_width="fill_parent"
@@ -20,7 +20,7 @@
         android:text="@string/button_SMS" 
         android:onClick="sendSMS"
         android:background="@drawable/btn_lightblue_glossy"
-        style="buttonText"/>
+        style="@style/ButtonText"/>
 	<Button
         android:id="@+id/buttonLogs"
         android:layout_width="fill_parent"
@@ -28,6 +28,6 @@
         android:text="@string/button_Logs" 
         android:onClick="checkLogs"
         android:background="@drawable/btn_lightblue_glossy"
-        style="buttonText"/>
+        style="@style/ButtonText"/>
     
 </LinearLayout>
