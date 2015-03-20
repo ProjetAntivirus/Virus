@@ -2,16 +2,15 @@ package view;
 
 import java.sql.SQLException;
 import java.util.List;
-import java.util.Random;
 
-import com.example.virus.R;
-
-import bdd.Comment;
-import bdd.CommentsDataSource;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import bdd.Comment;
+import bdd.CommentsDataSource;
+
+import com.example.virus.R;
 
 public class DatabaseActivity extends ListActivity{
 	

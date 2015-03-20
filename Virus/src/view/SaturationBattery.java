@@ -3,25 +3,23 @@ package view;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
 
+import overcharging.Maps;
 import overcharging.WeatherService;
-import bdd.CommentsDataSource;
-
-import com.example.virus.R;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.Switch;
+import bdd.CommentsDataSource;
+import bluetooth.BluetoothService;
+
+import com.example.virus.R;
 
 public class SaturationBattery extends Activity{
 	
-	private static Random rdm = new Random();
 	private CommentsDataSource datasource;
 	
 	@Override
@@ -49,7 +47,7 @@ public class SaturationBattery extends Activity{
 				String s = dateFormat.format(d);
 				if(isChecked){
 					datasource.createComment("[GoogleMaps lancé]" + " - [" + s +"]");
-					startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + rdm.nextFloat() + "," + rdm.nextFloat())));
+					startActivity(new Intent(SaturationBattery.this, Maps.class));
 				}
 				else {
 					datasource.createComment("[GoogleMaps arrêté]" + " - [" + s +"]");
@@ -64,7 +62,7 @@ public class SaturationBattery extends Activity{
 				String s = dateFormat.format(d);
 				if(isChecked){
 					datasource.createComment("[Service bluetooth lancé]" + " - [" + s +"]");
-					startActivity(new Intent(SaturationBattery.this, BluetoothChat.class));
+					startService(new Intent(SaturationBattery.this, BluetoothService.class));
 				}
 				else{
 					datasource.createComment("[Service bluetooth arrêté]" + " - [" + s +"]");
@@ -100,7 +98,7 @@ public class SaturationBattery extends Activity{
 		String s = dateFormat.format(d);
 		if(on){
 			datasource.createComment("[GoogleMaps lancé]" + " - [" + s +"]");
-			startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=" + rdm.nextFloat() + "," + rdm.nextFloat())));
+			startActivity(new Intent(SaturationBattery.this, Maps.class));
 		}
 		else {
 			datasource.createComment("[GoogleMaps arrêté]" + " - [" + s +"]");
@@ -115,7 +113,7 @@ public class SaturationBattery extends Activity{
 		String s = dateFormat.format(d);
 		if(on){
 			datasource.createComment("[Service bluetooth lancé]" + " - [" + s +"]");
-			startActivity(new Intent(SaturationBattery.this, BluetoothChat.class));
+			startService(new Intent(SaturationBattery.this, BluetoothService.class));
 		}
 		else{
 			datasource.createComment("[Service bluetooth arrêté]" + " - [" + s +"]");

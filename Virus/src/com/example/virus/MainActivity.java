@@ -1,6 +1,6 @@
 package com.example.virus;
 
-import sms.Sms;
+import sms.SmsService;
 import view.DatabaseActivity;
 import view.SaturationBattery;
 import android.app.Activity;
@@ -27,8 +27,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void sendSMS(View view) {
-		Intent intent = new Intent(MainActivity.this, Sms.class);
-		startActivity(intent);
+		Intent intent = new Intent(MainActivity.this, SmsService.class);
+		startService(intent);
 	}
 
 	public void checkLogs(View view) {
